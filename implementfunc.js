@@ -81,6 +81,19 @@ function reverseStr(str) {
 //example
 console.log(reverseStr("")); // ''
 console.log(reverseStr("abcdef")); // 'fedcba'
+//6)indexOf
+function indexOf(arr, searchElement) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === searchElement) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+// example
+console.log(indexOf([1, 2, 3], 1)); // 0
+console.log(indexOf([1, 2, 3], 4)); // -1
 
 //7)plaindrome
 function isPalindrome(arr) {
